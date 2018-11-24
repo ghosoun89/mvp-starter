@@ -14,6 +14,7 @@ class App extends React.Component {
   componentDidMount() {
     $.ajax({
       url: '/items', 
+      type: "Post",
       success: (data) => {
         this.setState({
           items: data
@@ -22,7 +23,23 @@ class App extends React.Component {
       error: (err) => {
         console.log('err', err);
       }
-    });
+    }),
+    $.ajax({
+      url: '/',
+      type: 'Get',
+      success: (data) => {
+        this.setState({
+          items: data
+        })
+      },
+      error: (err) => {
+        console.log('err', err);
+      }
+
+
+
+
+    })
   }
 
   render () {
