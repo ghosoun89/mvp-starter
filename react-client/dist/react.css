@@ -1,9 +1,13 @@
 body {
     background-image: url(shop.jpg);
     
-    height: 500px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+    height: 800px; 
+  background-position: center; 
+  background-repeat: no-repeat; 
   background-size: cover;
-    background-size: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 }
