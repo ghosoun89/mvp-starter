@@ -57,40 +57,6 @@ class App extends React.Component {
 
 
 
-// componentDidMount() {
-    // $.ajax({
-    //   url: '/items', 
-    //   type: "Post",
-    //  contentType: 'application/json',
-    //  data: {name:'mmmm',price:'kkkk'},
-    //   success: (data) => {
-    //     this.setState({
-    //       items: data
-    //     })
-    //   },
-    //   error: (err) => {
-    //     console.log('err', err);
-    //   }
-    // }),
-    // $.ajax({
-    //   url: '/items',
-    //   type: 'Get',
-    //   //contentType: 'application/json',
-    //   success: (data) => {
-    //     this.setState({
-    //       items: data
-    //     })
-    //   },
-    //   error: (err) => {
-    //     console.log('err', err);
-    //   }
-
-
-
-
-    // })
-
-
 
 
   render () {
@@ -109,9 +75,9 @@ class App extends React.Component {
           Price:
           <input type="text" value={this.state.price} onChange={this.handlePriceChange.bind(this)} />
         </label>
-        <input type="submit" value="Save" />
+        <input  id = "inp" type="submit" value="Save" />
         </form>
-       <button onClick={this.handleClick.bind(this)}>View</button>
+       <button class= "btn" onClick={this.handleClick.bind(this)}>View</button>
 
       </div>
     </div>
