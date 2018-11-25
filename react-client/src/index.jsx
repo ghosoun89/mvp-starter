@@ -15,6 +15,7 @@ class App extends React.Component {
     $.ajax({
       url: '/items', 
       type: "Post",
+     // contentType: 'application/json',
       success: (data) => {
         this.setState({
           items: data
@@ -25,8 +26,9 @@ class App extends React.Component {
       }
     }),
     $.ajax({
-      url: '/',
+      url: '/items',
       type: 'Get',
+      //contentType: 'application/json',
       success: (data) => {
         this.setState({
           items: data

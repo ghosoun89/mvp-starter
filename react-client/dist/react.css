@@ -1,0 +1,9 @@
+.img {
+    background: url(shop.jpg);
+    
+    height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+    background-size: auto;
+}

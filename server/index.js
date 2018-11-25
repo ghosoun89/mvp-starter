@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 // app.use(express.static(__dirname + '/../node_modules'));
 
 
-app.post('/items', function(req, res){
+app.post('/items', function(req, res){ 
   console.log('----------- req.body = ',req.body)
   items.save(req.body, function(err, data){
     console.log("from DB");
@@ -33,7 +33,7 @@ app.get('/items', function (req, res) {
     if(err) {
       res.sendStatus(500);
     } else {
-      res.json(data);
+      res.json(data);  // it will run it through json stringify
     }
   });
 });

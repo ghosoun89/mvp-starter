@@ -3,9 +3,10 @@
 <head>
   <title>Item List</title>
 </head>
-<body>
+<body  class = "img" background = "shop.jpg">
 <div id="app"></div>
 <script type="text/javascript" src="bundle.js"></script>
+<script type="text/javascript" src = "react.css"></script>
 <form>
    Items:<br>
   <input type="text" name="items"><br>
@@ -15,7 +16,7 @@
 <form method = 'Post' action = '/items'>
   <input type="submit" value="save">
 </form>
-  <form method = 'Get' action = '/'>
+  <form method = 'Get' action = '/items'>
   
   <input type="submit" value="view">
 </form>
