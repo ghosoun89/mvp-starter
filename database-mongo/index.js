@@ -19,7 +19,8 @@ var itemSchema = mongoose.Schema({
 var Item = mongoose.model('Item', itemSchema);
 
 var save = (data, callback) => {
-  Item.collection.insert( data , function(err, data){
+  var item = new Item({name:data.name , price: data.price});
+  item.save(function(err, data){
     if(err){
       callback(err, null);
     } else{
